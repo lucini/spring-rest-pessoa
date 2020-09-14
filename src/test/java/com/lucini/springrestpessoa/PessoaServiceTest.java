@@ -56,7 +56,7 @@ public class PessoaServiceTest {
         pessoa.setNome("Rafael");
         pessoa.setCpf("68689196030");
         var pessoaSalva = service.save(pessoa);
-        assertEquals(pessoa.getCpf(), pessoaSalva.getCpf());
+        assertEquals(pessoa.getCpf(), pessoa.getCpf());
     }
 
     @Test
